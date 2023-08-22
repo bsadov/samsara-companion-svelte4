@@ -66,6 +66,8 @@
 
 <div class='nav-container'>
     {#if visible}
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <!-- svelte-ignore a11y-no-static-element-interactions -->
         <div class="timeline-menu" use:clickOutside on:click_outside={expandMenu} on:click={expandMenu} transition:fly="{{ x: -50, duration: 500 }}">
         <ScenesMenu /></div>
     {/if}
@@ -120,27 +122,27 @@
     }
 
     #menu {
-        background-image: url(%sveltekit.assets%/icon-menu.svg);
+        background-image: url(./icon-menu.svg);
     }
 
     #play {
-        background-image: url(%sveltekit.assets%/icon-play.svg);
+        background-image: url(./icon-play.svg);
     }
 
     #pause{
-        background-image: url(%sveltekit.assets%/icon-pause.svg);
+        background-image: url(./icon-pause.svg);
     }
 
     #reset{
-        background-image: url(%sveltekit.assets%/icon-stop.svg);
+        background-image: url(./icon-stop.svg);
     }
 
     #prev{
-        background-image: url(%sveltekit.assets%/icon-prev.svg);
+        background-image: url(./icon-prev.svg);
     }
 
     #next{
-        background-image: url(%sveltekit.assets%/icon-next.svg);
+        background-image: url(./icon-next.svg);
     }
 
     button span{

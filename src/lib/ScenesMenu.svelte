@@ -9,7 +9,9 @@
 
 <ul>
   {#each $storedscenes as scene}
-    <li tabindex="0" on:click={() => selectLocation(scene)}>
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+    <li tabindex="-1" on:click={() => selectLocation(scene)}>
       {#if $storedcurrent == scene}
         [{formatTime(scene.start)}] <b>{scene.name}</b>
       {:else}

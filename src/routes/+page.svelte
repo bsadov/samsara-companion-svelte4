@@ -1,6 +1,7 @@
 <script>
-  import SceneInfo from './lib/SceneInfo.svelte'
-  import TimerMenu from './lib/TimerMenu.svelte'
+import SceneInfo from '../lib/SceneInfo.svelte'
+import TimerMenu from '../lib/TimerMenu.svelte'
+import '../app.css'
 </script>
 
 <nav>
