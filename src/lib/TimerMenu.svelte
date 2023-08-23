@@ -122,27 +122,27 @@
     }
 
     #menu {
-        background-image: url(./icon-menu.svg);
+        background-image: url(../../static/icon-menu.svg);
     }
 
     #play {
-        background-image: url(./icon-play.svg);
+        background-image: url(../../static/icon-play.svg);
     }
 
     #pause{
-        background-image: url(./icon-pause.svg);
+        background-image: url(../../static/icon-pause.svg);
     }
 
     #reset{
-        background-image: url(./icon-stop.svg);
+        background-image: url(../../static/icon-stop.svg);
     }
 
     #prev{
-        background-image: url(./icon-prev.svg);
+        background-image: url(../../static/icon-prev.svg);
     }
 
     #next{
-        background-image: url(./icon-next.svg);
+        background-image: url(../../static/icon-next.svg);
     }
 
     button span{

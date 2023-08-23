@@ -14,5 +14,5 @@ import '../app.css'
 </main>
 
 <footer>
-<p>@<a href="https://twitter.com/bsadov" alt="link to twitter page" target="_blank">bsadov</a>&nbsp;2022</p>
+<p>@<a href="https://twitter.com/bsadov" alt="link to twitter page" target="_blank">bsadov</a>&nbsp;2023</p>
 </footer>
