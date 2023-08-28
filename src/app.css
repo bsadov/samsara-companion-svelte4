@@ -41,26 +41,32 @@ body {
   background: rgba(25,25,25,255);
 }
 
-main{
+/* main{
   height: 94vh;
-/*   box-shadow: 1px 2px 10px grey;
-  border-radius: 0 0 10px;
-  background-color: rgba(130, 255, 140, 0.2);
-  padding: 5px; */
-}
-
-/*  * {
-  outline: 1px solid red;
 } */
 
-.title{
-  position: relative;
-  left: 860px;
-  top: -450px;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
+.title {
   font-size: 4em;
+
 }
+
+/* Desktop resolution */
+@media (min-width: 1024px) {
+  .title {
+    position: relative;
+    left: 860px;
+    top: -450px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+}
+
+/* Mobile resolution */
+/* @media (max-width: 768px) {
+  .title {
+  }
+} */
+
 
 footer{
   position: fixed;

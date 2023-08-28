@@ -25,16 +25,28 @@
 <style>
 .info-container{
     display: flex;
+    flex-wrap: wrap;
     border-radius: 0 0 10px 10px;
     min-height: 450px;
-    width: 900px;
+    max-width: 900px;
     padding: .5em;
     text-align: right;
     background-color: rgba(62,62,62,255);
 }
 
 .info, .map{
-    flex: 1;
+    flex: 50%;
+}
+
+@media (max-width: 768px) {
+  .info-container {
+    max-width: 600px;
+    flex-direction: column;
+  }
+
+  .info, .map{
+    width: 100%;
+  }
 }
 
 h2{
