@@ -39,13 +39,19 @@
 }
 
 @media (max-width: 768px) {
-  .info-container {
-    max-width: 600px;
-    flex-direction: column;
+    .info-container {
+        flex-direction: column;
   }
 
-  .info, .map{
-    width: 100%;
+    .info, .map{
+        width: 100%;
+        text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+    .info-container {
+        width: 900px;
   }
 }
 
