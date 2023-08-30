@@ -28,31 +28,16 @@
     flex-wrap: wrap;
     border-radius: 0 0 10px 10px;
     min-height: 450px;
-    max-width: 900px;
+    min-width: 400px;
+    width: 100%;
     padding: .5em;
     text-align: right;
     background-color: rgba(62,62,62,255);
 }
 
 .info, .map{
-    flex: 50%;
-}
-
-@media (max-width: 768px) {
-    .info-container {
-        flex-direction: column;
-  }
-
-    .info, .map{
-        width: 100%;
-        text-align: center;
-  }
-}
-
-@media (min-width: 1024px) {
-    .info-container {
-        width: 900px;
-  }
+    margin: 5px;
+    flex: 1;
 }
 
 h2{

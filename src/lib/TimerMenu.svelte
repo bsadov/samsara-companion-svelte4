@@ -92,7 +92,7 @@
         display: flex;
         align-items: center;
         top: 0px;
-        max-width: 900px;
+        width: 100%;
         padding: 0 5px;
     }
 
@@ -109,6 +109,7 @@
     }
 
     input[type="range"]{
+        min-width: 150px;
         width: 100%;
     }
 

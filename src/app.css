@@ -23,6 +23,7 @@ a {
   color: white;
   text-decoration: inherit;
 }
+
 a:hover {
   color: lightblue;
 }
@@ -30,43 +31,20 @@ a:hover {
 #app {
   max-width: 1280px;
   margin: 0 auto;
+  width: 80%;
   text-align: center;
 }
 
 body {
   margin: 0 auto;
   display: flex;
-/*   min-width: 320px;
-  min-height: 98vh; */
+  min-width: 320px;
   background: rgba(25,25,25,255);
 }
 
-/* main{
-  height: 94vh;
-} */
-
 .title {
   font-size: 4em;
-
 }
-
-/* Desktop resolution */
-@media (min-width: 1024px) {
-  .title {
-    position: relative;
-    left: 860px;
-    top: -450px;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-  }
-}
-
-/* Mobile resolution */
-/* @media (max-width: 768px) {
-  .title {
-  }
-} */
-
 
 footer{
   position: fixed;
