@@ -40,6 +40,11 @@
     flex: 1;
 }
 
+.map img {
+    max-width: 100%;
+    height: auto;
+}
+
 h2{
     color: lightblue;
 }

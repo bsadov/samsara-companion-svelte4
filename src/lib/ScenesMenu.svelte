@@ -22,14 +22,14 @@
 </ul>
 
 <style>
-ul{
-  text-align: left;
-  list-style: none;
-}
+  ul{
+    text-align: left;
+    list-style: none;
+  }
 
-b{
-  font-family: 'Oregano';
-  font-size: 1.2em;
-  color: lightblue
-}
+  b{
+    font-family: 'Oregano';
+    font-size: 1.2em;
+    color: lightblue
+  }
 </style>
