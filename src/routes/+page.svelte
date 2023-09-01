@@ -1,18 +1,13 @@
 <script>
-import SceneInfo from '../lib/SceneInfo.svelte'
-import TimerMenu from '../lib/TimerMenu.svelte'
-import '../app.css'
+  import SceneInfo from "../lib/SceneInfo.svelte";
+  import TimerMenu from "../lib/TimerMenu.svelte";
+  import "../app.css";
 </script>
 
-<nav>
-    <TimerMenu />
-</nav>
-
-<main>
-    <SceneInfo />
-    <h1 class=title>Samsara Companion</h1>
-</main>
+<h1 class="title">Samsara Companion</h1>
+<TimerMenu />
+<SceneInfo />
 
 <footer>
-    <p>@<a href="https://twitter.com/bsadov" alt="link to twitter page" target="_blank">bsadov</a>&nbsp;2023</p>
+  <p>@<a href="https://twitter.com/bsadov" alt="link to twitter page" target="_blank">bsadov</a>&nbsp;2023</p>
 </footer>

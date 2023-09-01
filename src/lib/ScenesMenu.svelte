@@ -1,10 +1,10 @@
 <script>
-    import { seconds, storedcurrent, storedscenes, formatTime } from './stores.js'
-	  
-    function selectLocation(location){
-      $storedcurrent = location
-      $seconds = location.start
-    }
+  import { seconds, storedcurrent, storedscenes, formatTime } from "./stores.js";
+
+  function selectLocation(location) {
+    $storedcurrent = location;
+    $seconds = location.start;
+  }
 </script>
 
 <ul>
@@ -22,14 +22,14 @@
 </ul>
 
 <style>
-  ul{
+  ul {
     text-align: left;
     list-style: none;
   }
 
-  b{
-    font-family: 'Oregano';
+  b {
+    font-family: "Oregano";
     font-size: 1.2em;
-    color: lightblue
+    color: lightblue;
   }
 </style>
