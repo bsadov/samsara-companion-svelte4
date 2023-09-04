@@ -67,10 +67,10 @@
   }
 </script>
 
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<!-- svelte-ignore a11y-no-static-element-interactions -->
 <div class="nav-container">
   {#if visible}
-    <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <!-- svelte-ignore a11y-no-static-element-interactions -->
     <div class="timeline-menu" use:clickOutside on:click_outside={expandMenu} on:click={expandMenu} transition:fly={{ x: -50, duration: 500 }}>
       <ScenesMenu />
     </div>

@@ -5,17 +5,21 @@
     $storedcurrent = location;
     $seconds = location.start;
   }
+
+  function focusElement(ele) {
+    ele.focus();
+  }
 </script>
 
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 <ul>
   {#each $storedscenes as scene}
-    <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-    <li tabindex="-1" on:click={() => selectLocation(scene)}>
+    <li on:click={() => selectLocation(scene)}>
       {#if $storedcurrent == scene}
-        [{formatTime(scene.start)}] <b>{scene.name}</b>
+        <a href="#menu" use:focusElement>[{formatTime(scene.start)}] <b>{scene.name}</b></a>
       {:else}
-        [{formatTime(scene.start)}] {scene.name}
+        <a href="#menu">[{formatTime(scene.start)}] {scene.name}</a>
       {/if}
     </li>
   {/each}
@@ -25,6 +29,10 @@
   ul {
     text-align: left;
     list-style: none;
+  }
+
+  li {
+    cursor: pointer;
   }
 
   b {
