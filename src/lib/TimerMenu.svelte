@@ -65,6 +65,27 @@
       $seconds = $storedcurrent.start;
     }
   }
+
+  function handleKeydown(event) {
+    switch (event.keyCode) {
+      case 80:
+      case 32:
+        active ? pauseTimer() : runTimer();
+        break;
+      case 39:
+        nextLocation();
+        break;
+      case 37:
+        prevLocation();
+        break;
+      case 82:
+        resetTimer();
+        break;
+      case 77:
+        expandMenu();
+        break;
+    }
+  }
 </script>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -88,6 +109,8 @@
   <p>{formatTime($seconds)}</p>
   <input type="range" bind:value={$seconds} on:input={() => forcedTimeChange()} min="0" max="6120" />
 </div>
+
+<svelte:window on:keydown={handleKeydown} />
 
 <style>
   .nav-container {
