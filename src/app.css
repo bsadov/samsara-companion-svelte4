@@ -30,17 +30,17 @@ a:hover {
   max-width: 1280px;
   margin: 0 auto;
   width: 80%;
-  text-align: center;
 }
 
 body {
   margin: 0 auto;
   display: flex;
   min-width: 320px;
-  background: rgba(25, 25, 25, 255);
+  background: rgb(25, 25, 25);
 }
 
 .title {
+  text-align: center;
   font-size: min(5vw, 4em);
 }
 

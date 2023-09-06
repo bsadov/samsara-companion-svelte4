@@ -37,7 +37,7 @@
     width: 100%;
     padding: 0.5em;
     text-align: right;
-    background-color: rgba(62, 62, 62, 255);
+    background-color: rgb(62, 62, 62);
   }
 
   .info,
