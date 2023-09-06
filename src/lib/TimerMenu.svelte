@@ -79,7 +79,7 @@
         prevLocation();
         break;
       case 82:
-        resetTimer();
+        if ($seconds !== 0) resetTimer();
         break;
       case 77:
         expandMenu();
