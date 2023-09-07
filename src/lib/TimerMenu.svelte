@@ -66,7 +66,7 @@
     }
   }
 
-  function handleKeydown(event) {
+  export function handleKeydown(event) {
     switch (event.keyCode) {
       case 80:
       case 32:
@@ -109,8 +109,6 @@
   <p>{formatTime($seconds)}</p>
   <input type="range" bind:value={$seconds} on:input={() => forcedTimeChange()} min="0" max="6120" />
 </div>
-
-<svelte:window on:keydown={handleKeydown} />
 
 <style>
   .nav-container {

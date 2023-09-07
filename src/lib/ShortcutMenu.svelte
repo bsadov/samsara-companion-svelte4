@@ -6,10 +6,14 @@
   function expandMenu() {
     visible = !visible;
   }
+
+  export function handleKeydown() {
+    expandMenu();
+  }
 </script>
 
 <div id="shortcutMenu">
-  <button id="shortcutButton" on:click={expandMenu}>Shortcuts</button>
+  <button id="shortcutButton" on:click={expandMenu}>[S]hortcuts</button>
   {#if visible}
     <div id="shortcutDisplay" transition:fade={{ duration: 300 }}>
       <ul>
